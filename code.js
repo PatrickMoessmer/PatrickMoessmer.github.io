@@ -57,6 +57,30 @@ function loeffeln () {
   console.log(loeffel_output);
 }
 
+function loeffeln_back () {
+  let loeffel_back_input = document.getElementById('loeffel_back_input').value
+  let loeffel_back_output = loeffel_back_input.replace(/allawa/g, "a")
+  loeffel_back_output = loeffel_back_output.replace(/Allawa/g, "A")
+  loeffel_back_output = loeffel_back_output.replace(/ellewe/g, "e")
+  loeffel_back_output = loeffel_back_output.replace(/Ellewe/g, "E")
+  loeffel_back_output = loeffel_back_output.replace(/illiwi/g, "i")
+  loeffel_back_output = loeffel_back_output.replace(/Illiwi/g, "I")
+  loeffel_back_output = loeffel_back_output.replace(/ollowo/g, "o")
+  loeffel_back_output = loeffel_back_output.replace(/Ollowo/g, "O")
+  loeffel_back_output = loeffel_back_output.replace(/ulluwu/g, "u")
+  loeffel_back_output = loeffel_back_output.replace(/Ulluwu/g, "U")
+  loeffel_back_inputoutput = loeffel_back_output.replace(/älläwä/g, "ä")
+  loeffel_back_output = loeffel_back_output.replace(/Älläwä/g, "Ä")
+  loeffel_back_output = loeffel_back_output.replace(/öllöwö/g, "ö")
+  loeffel_back_output = loeffel_back_output.replace(/Öllöwö/g, "Ö")
+  loeffel_back_output = loeffel_back_output.replace(/üllüwü/g, "ü")
+  loeffel_back_output = loeffel_back_output.replace(/Üllüwü/g, "Ü")
+  loeffel_back_output = loeffel_back_output.replace(/yllywy/g, "y")
+  loeffel_back_output = loeffel_back_output.replace(/Yllywy/g, "")
+  document.getElementById("loeffel_back_output").value = loeffel_back_output
+  console.log(loeffel_back_output);
+}
+
 
 const letters_numbers = {
   "a": 0,
