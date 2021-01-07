@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h2>Vigènere Encryption</h2>
+
+  <!-- Message Input -->
+
+    <label for="message_input">Original message:</label>
+    <br>
+    <textarea id = "message_input" name="name" rows="2" cols="80" placeholder="Enter your message here!"></textarea>
+    <br>
+
+  <!-- Encryption Key Input -->
+
+  <label for="encryption_key">Encryption key:</label>
+  <br>
+  <textarea id = "encryption_key" name="name" rows="2" cols="80" placeholder="Enter your encryption key here!"></textarea>
+  <br>
+  <input type="submit" value="Submit" onClick = "submit_message_input()">
+  <br>
+  <br>
+
+  <!-- Encrypted Message Output -->
+  <label for="encrypted_message_output">This is your encrypted message:</label>
+  <br>
+  <textarea id = "encrypted_message_output" name="name" rows="2" cols="80"></textarea>
+  <script src="code.js"></script>
+  </body>
+</html>
