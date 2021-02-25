@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+  <h2>Morse Code</h2>
+
+  <p>Please note: You can use lower case and upper case letters in your input message, but no special characters such as ., ,, ?, !, ", ä, ü, ö, etc..</p>
+  <!-- Text Input -->
+    <label for="morse_input">Original-Text:</label>
+    <br>
+    <textarea id = "morse_input" name="name" rows="4" cols="80" placeholder="Schreib was :)!"></textarea>
+    <br>
+    <input type="submit" value="Morsen" onClick = "morse()">
+    <br>
+    <br>
+
+  <!-- Morse Output -->
+
+    <label for="morse_output">Morse Text:</label>
+    <br>
+    <textarea id = "morse_output" name="name" rows="4" cols="80"></textarea>
+    <br>
+
+    <h2>Und jetzt rückwärts:</h2>
+    <!-- Morse Text Input -->
+    <label for="morse_back_input">Morse Text:</label>
+    <br>
+    <textarea id = "morse_back_input" name="name" rows="4" cols="80" placeholder="Hier kommt dein Morse Text rein!"></textarea>
+    <br>
+    <input type="submit" value="Morse Rückwärts" onClick = "morse_back()">
+    <br>
+    <br>
+
+  <!-- Morse Back Output -->
+
+    <label for="morse_back_output">Normaler Text:</label>
+    <br>
+    <textarea id = "morse_back_output" name="name" rows="4" cols="80"></textarea>
+    <br>
+
+    <script src="code.js"></script>
+    </body>
+  </html>

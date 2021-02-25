@@ -10,18 +10,18 @@
 
   <!-- Message Input -->
 
-    <label for="message_input">Original message:</label>
+    <label for="message_input">Original Message:</label>
     <br>
     <textarea id = "message_input" name="name" rows="2" cols="80" placeholder="Enter your message here!"></textarea>
     <br>
 
   <!-- Encryption Key Input -->
 
-  <label for="encryption_key">Encryption key:</label>
+  <label for="encryption_key">Encryption Key:</label>
   <br>
   <textarea id = "encryption_key" name="name" rows="2" cols="80" placeholder="Enter your encryption key here!"></textarea>
   <br>
-  <input type="submit" value="Submit" onClick = "submit_message_input()">
+  <input type="submit" value="Submit" onClick = "vigenere_encrypt_message()">
   <br>
   <br>
 
@@ -29,6 +29,28 @@
   <label for="encrypted_message_output">This is your encrypted message:</label>
   <br>
   <textarea id = "encrypted_message_output" name="name" rows="2" cols="80"></textarea>
+
+  <h2>Vigènere Decryption</h2>
+
+  <!-- Decrypted Message Input -->
+  <label for="encrypted_message_input">Encrypted Message:</label>
+  <br>
+  <textarea id = "encrypted_message_input" name="name" rows="2" cols="80" placeholder="Enter your encrypted message here!"></textarea>
+  <br>
+
+  <label for="decryption_key">Decryption Key:</label>
+  <br>
+  <textarea id = "decryption_key" name="name" rows="2" cols="80" placeholder="Enter your decryption key here!"></textarea>
+  <br>
+  <input type="submit" value="Submit" onClick = "vigenere_decrypt_message()">
+  <br>
+  <br>
+
+  <label for="decrypted_message_output">This is your decrypted Message:</label>
+  <br>
+  <textarea id = "decrypted_message_output" name="name" rows="2" cols="80"></textarea>
+  <br>
+
   <script src="code.js"></script>
   </body>
 </html>
