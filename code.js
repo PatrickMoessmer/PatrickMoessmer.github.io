@@ -293,6 +293,9 @@ function morse () {
     case "z":
     morse_output = morse_output.concat(" --..")
     continue
+    case " ":
+    morse_output = morse_output.concat("   ")
+    continue
 }
   }
 
@@ -303,19 +306,21 @@ function morse_back () {
 
   let morse_back_input = document.getElementById('morse_back_input').value.toLowerCase()
   morse_back_input_array = morse_back_input.split(" ")
+  console.log(morse_back_input_array)
   let morse_back_output = "";
   for (i = 0; i<morse_back_input_array.length; i++) {
+    if (morse_back_input_array[i] == "" && morse_back_input_array[i-1] == "" && morse_back_input_array[i+1] == "") {
+      morse_back_output = morse_back_output.concat(" ");
+      continue
+    }
     switch(morse_back_input_array[i])
     {
     case ".-":
     morse_back_output = morse_back_output.concat("a");
-    console.log(morse_output)
     continue
 
     case "_...":
-    console.log("b was found")
     morse_back_output = morse_back_output.concat("b")
-    console.log(morse_output)
     continue
     case "-.-.":
     morse_back_output = morse_back_output.concat("c")
